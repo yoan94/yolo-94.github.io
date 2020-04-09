@@ -1,0 +1,79 @@
+
+html[data-theme="dark"] {
+    $color-surface: #121212;
+    $color-bg: #242424;
+    $color-text: #e1e1e1;
+    $color-anchor: #0084e0;
+
+    --card-background-color: #{$color-surface};
+    --card-shadow-color: #0d0d0d;
+    --tag-color: #1e1e1b;
+    --links-icon-color: #{$color-text};
+
+    body {
+        background-color: $color-bg;
+        color: $color-text;
+    }
+
+    a {
+        color: $color-anchor;
+    }
+
+    a:hover {
+        color: $color-text;
+    }
+
+    .content.div-bar::before {
+        border-top-color: #373737 !important;
+    }
+
+    #first-section {
+        background-color: $color-surface;
+
+        h1, h2, h3 {
+            color: white;
+        }
+
+        .bar a {
+            color: $color-text;
+        }
+    }
+
+    .skills-list > .item > .icon,
+    .projects-list > .item > .cover,
+    .experiences-list > .item > .icon {
+        filter: brightness(75%);
+        transition: filter 200ms;
+        &:hover {
+            filter: none;
+        }
+    }
+
+    #contact .contact-form {
+        background-color: $color-surface;
+
+        input:not([type="submit"]), textarea {
+            color: $color-text;
+            background-color: $color-surface;
+            border-color:#9b9b9b !important;
+            border-bottom-color: #9b9b9b !important;
+        }
+
+        input[type="submit"] {
+            color: $color-text;
+            background-color: #1a1a1a;
+            border: none;
+            border-bottom: 1px solid #282828;
+        }
+    }
+
+    #footer {
+        background-color: transparent;
+        color: $color-text
+    }
+
+    #switch-theme {
+        color: black;
+        background-color: #e8e8e8;
+    }
+}

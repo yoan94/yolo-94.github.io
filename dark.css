@@ -1,0 +1,82 @@
+html[data-theme="dark"] {
+  --card-background-color: #121212;
+  --card-shadow-color: #0d0d0d;
+  --tag-color: #1e1e1b;
+  --links-icon-color: #e1e1e1;
+}
+
+html[data-theme="dark"] body {
+  background-color: #242424;
+  color: #e1e1e1;
+}
+
+html[data-theme="dark"] a {
+  color: #0084e0;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #e1e1e1;
+}
+
+html[data-theme="dark"] .content.div-bar::before {
+  border-top-color: #373737 !important;
+}
+
+html[data-theme="dark"] #first-section {
+  background-color: #121212;
+}
+
+html[data-theme="dark"] #first-section h1, html[data-theme="dark"] #first-section h2, html[data-theme="dark"] #first-section h3 {
+  color: white;
+}
+
+html[data-theme="dark"] #first-section .bar a {
+  color: #e1e1e1;
+}
+
+html[data-theme="dark"] .skills-list > .item > .icon,
+html[data-theme="dark"] .projects-list > .item > .cover,
+html[data-theme="dark"] .experiences-list > .item > .icon {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  -webkit-transition: -webkit-filter 200ms;
+  transition: -webkit-filter 200ms;
+  transition: filter 200ms;
+  transition: filter 200ms, -webkit-filter 200ms;
+}
+
+html[data-theme="dark"] .skills-list > .item > .icon:hover,
+html[data-theme="dark"] .projects-list > .item > .cover:hover,
+html[data-theme="dark"] .experiences-list > .item > .icon:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+html[data-theme="dark"] #contact .contact-form {
+  background-color: #121212;
+}
+
+html[data-theme="dark"] #contact .contact-form input:not([type="submit"]), html[data-theme="dark"] #contact .contact-form textarea {
+  color: #e1e1e1;
+  background-color: #121212;
+  border-color: #9b9b9b !important;
+  border-bottom-color: #9b9b9b !important;
+}
+
+html[data-theme="dark"] #contact .contact-form input[type="submit"] {
+  color: #e1e1e1;
+  background-color: #1a1a1a;
+  border: none;
+  border-bottom: 1px solid #282828;
+}
+
+html[data-theme="dark"] #footer {
+  background-color: transparent;
+  color: #e1e1e1;
+}
+
+html[data-theme="dark"] #switch-theme {
+  color: black;
+  background-color: #e8e8e8;
+}
+/*# sourceMappingURL=dark.css.map */
